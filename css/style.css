@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');
+
+body {
+    font-family: 'Andika New Basic', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+        -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+#landing {
+    background: #FFF;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    height: 50vh;
+}
+
+#landing-text-inner h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#landing-text-inner h2 {
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #888;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #333;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: .6rem 2rem;
+    border-radius: 50px;
+    transition: background .3s ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+#landing-image {
+    background: url(https://source.unsplash.com/Zd6ZHK_Gh7s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin: 0;
+    flex: 0 1 60vw;
+}
+
+#image-header {
+    padding: 1.5rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#image-header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.caption {
+    text-align: center;
+    padding: .8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+/* Untuk layar 500px keatas */
+@media (min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-text-inner h1 {
+        font-size: 2rem;
+    }
+
+    #landing-text-inner h2 {
+        font-size: 1rem;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+
+}
+
+/* Untuk layar 700px keatas */
+@media (min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
